@@ -2,7 +2,7 @@ import java.io.File
 
 fun main() {
     val passwords = mutableListOf<Password>()
-    File("2020/input/2.txt").forEachLine { passwords.add(Password.parse(it)) }
+    File("2020/input/02.txt").forEachLine { passwords.add(Password.parse(it)) }
 
     val partOne = passwords.count { it.oldPolicyValid() }
     val partTwo = passwords.count { it.newPolicyValid() }

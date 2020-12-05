@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val map = File("2020/input/3.txt").run { Map.parse(readText()) }
+    val map = File("2020/input/03.txt").run { Map.parse(readText()) }
 
     val partOne = treesEncountered(map, Coords(3, 1))
 

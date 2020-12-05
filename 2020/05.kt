@@ -6,7 +6,7 @@ import kotlin.math.min
 
 fun main() {
     val boardingPasses = mutableListOf<BoardingPass>()
-    File("2020/input/5.txt").forEachLine {
+    File("2020/input/05.txt").forEachLine {
         boardingPasses.add(decode(it))
     }
 

@@ -4,7 +4,7 @@ import java.io.File
 
 fun main() {
     val passports = mutableListOf<Passport>()
-    File("2020/input/4.txt").run {
+    File("2020/input/04.txt").run {
         passports.addAll(
                 readText()
                         .replace("\r", "")

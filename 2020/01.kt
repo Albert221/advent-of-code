@@ -2,7 +2,7 @@ import java.io.File
 
 fun main() {
     val numbers = mutableListOf<Int>()
-    File("2020/input/1.txt").forEachLine { numbers.add(it.toInt()) }
+    File("2020/input/01.txt").forEachLine { numbers.add(it.toInt()) }
 
     val match = 2020
 
