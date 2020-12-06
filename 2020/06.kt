@@ -29,16 +29,5 @@ class Group(val people: List<List<Char>>) {
 
     fun allLetters(): List<Char> = people.flatten().distinct()
 
-    fun everyoneLetters(): List<Char> {
-        val chars = mutableListOf<Char>()
-        chars@ for (char in people.flatten()) {
-            for (person in people) {
-                if (!person.contains(char)) continue@chars
-            }
-
-            chars.add(char)
-        }
-
-        return chars.distinct()
-    }
+    fun everyoneLetters(): List<Char> = people.reduce { acc, it -> acc.intersect(it).toList() }
 }
